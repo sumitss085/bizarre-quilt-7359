@@ -237,11 +237,90 @@ display: none;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     width: 85%;
+    column-gap: 50px;
+    row-gap: 45px;
     margin: auto;
-    /* grid-template-rows: ; */
+    padding-top: 40px;
+
 }
+#video_header h1{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 40px;
+}
+#video_header h4{
+    text-align: center;
+    padding-top: 15px;
+}
+video{
+    width: 100%;
+  height: auto;
+}
+#content_div_sec{
+    background-color: #24282f;
+    margin-top: 80px;
+}
+#content_div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 85%;
+    margin: auto;
+    column-gap: 100px;
+    row-gap: 25px;
+    padding-top: 70px;
+    color: white;
+}
+#content_div h3{
+    padding-bottom: 15px;
+}
+#content_div p{
+    padding-bottom: 15px;
+    font-size: 18px;
+}
+/* enterprise-scale */
 
+#enterprise-scale{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* grid-template-rows: 200px 500px; */
+    width: 85%;
+    margin: auto;
+    margin-top: 100px;
+}
+#enterprise-scale img{
+    width: 88%;
+    /* height: auto; */
+}
+#enterprise-scale h2{
+    font-size: 38px;
+    padding-bottom: 15px;
+}
+#enterprise-scale p{
+    font-size: 18px;
 
+}
+/* #maintaining_div */
+#maintaining_div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* grid-template-rows: 200px 300px; */
+    width: 85%;
+    margin: auto;
+    /* margin-top: 50px; */
+    padding-top: 150px;
+    column-gap: 25px;
+    color: white
+}
+#maintaining_section{
+    background-color: #24282f; 
+}
+#maintaining_div img{
+    width: 88%;
+}
+#maintaining_div p{
+    font-size: 18px;
+
+}
 
 /* ----------------------Media Query---------------------- */
 @media all and (min-width:700px)and (max-width: 1200px){
@@ -254,6 +333,18 @@ display: none;
     }
     #logo_img{
         grid-template-columns: repeat(5,1fr);
+    }
+    #viedo_container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #content_div{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #maintaining_div{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #enterprise-scale{
+        grid-template-columns: repeat(1,1fr);
     }
 
 } 
@@ -268,5 +359,17 @@ display: none;
     #logo_img{
         grid-template-columns: repeat(4,1fr);
         margin: auto;
+    }
+    #viedo_container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #content_div{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #maintaining_div{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #enterprise-scale{
+        grid-template-columns: repeat(1,1fr);
     }
 }
