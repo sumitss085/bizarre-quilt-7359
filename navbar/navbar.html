@@ -5,8 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
     <title>Document</title>
     <link rel="stylesheet" href="./navbar.css">
+    <style>
+
+    </style>
    
 </head>
 <body>   
@@ -47,11 +52,27 @@
             <a href="">Sign up free</a>
         </div>
         <div>
+            <i id="play" class="fa fa-play" style="font-size:25px;" onclick="playvedio('/vedio/vedio 1.mp4')"></i>
             <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/image-hero.png
             " alt="">
+             
         </div>
-    </div>
-    <p id="heading">Over 6 million videos created by thousands of businesses</p>
+       
+
+     </div>
+      <div class="vedio_player" id="vedioplay" >
+            <video id="mainvedio" controls  src="vedio/vedio 1.mp4" type="vedio/mp4"></video>
+            <i class="fa fa-close" id="close_btn" onclick="stop()" style="font-size:36px"></i>
+        </div>
+       
+   
+   
+   
+   
+   
+   
+   
+        <p id="heading">Over 6 million videos created by thousands of businesses</p>
     <div id="top-sec2" >
         
         <div> <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-salesforce-color.png" alt=""></div>
@@ -63,7 +84,44 @@
         <div><img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-mitsubishi-color.png" alt=""></div>
         <div><img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-cisco-color.png" alt=""></div>
     </div>
-   
+  
+   <div  id="mid_sec_head" >
+    <h1>Captivating video templates</h1>
+    <p>Drag and drop. No experience required.</p>
+   </div>
+
+   <div id="mid_sec">
+        <div >
+            <!-- <i  class="fa fa-play" style="font-size:25px;"></i> -->
+            <video onclick="playvedio('/vedio/prev_tracer.mp4')" width="370px"  controls height="200px" src="./vedio/prev_tracer.mp4" type="vedio/mp4"></video>
+        </div>
+        <div ><video onclick="playvedio('/vedio/prev_billow.mp4')" width="370px"  controls height="200px" src="./vedio/prev_billow.mp4" type="vedio/mp4"></video></div>
+        <div ><video onclick="playvedio('/vedio/prev_vertex.mp4')" width="370px"  controls height="200px" src="./vedio/prev_vertex.mp4" type="vedio/mp4"></video></div>
+        <div ><video onclick="playvedio('/vedio/prev_circuit.mp4')" width="370px"  controls height="200px" src="./vedio/prev_circuit.mp4" type="vedio/mp4"></video></div>
+        <div ><video onclick="playvedio('/vedio/prev_vault.mp4')" width="370px"  controls height="200px" src="./vedio/prev_vault.mp4" type="vedio/mp4"></video></div>
+        <div ><video onclick="playvedio('./vedio/prev_notice.mp4')" width="370px"  controls height="200px" src="./vedio/prev_notice.mp4" type="vedio/mp4"></video></div>
+        <div ><video onclick="playvedio('./vedio/flux_prev.mp4')" width="370px"  controls height="200px" src="./vedio/flux_prev.mp4" type="vedio/mp4"></video></div>
+        <div ><video onclick="playvedio('./vedio/unity_prev.mp4')" width="370px"  controls height="200px" src="./vedio/unity_prev.mp4" type="vedio/mp4"></video></div>
+        <div ><video onclick="playvedio('./vedio/looper_prev (1).mp4')" width="370px"  controls height="200px" src="./vedio/looper_prev (1).mp4" type="vedio/mp4"></video></div>
+   </div>
     
 </body>
 </html>
+<script>
+let vedioplay=document.getElementById("vedioplay")
+let mainvedio=document.getElementById("mainvedio")
+    
+function stop(){
+    vedioplay.style.display="none"
+    document.getElementById("mainvedio").removeAttribute("autoplay");
+}
+
+function playvedio(file){
+    mainvedio.src=file;
+    vedioplay.style.display="block"
+    mainvedio.setAttribute("autoplay","autoplay")
+  
+
+}
+    
+</script>
