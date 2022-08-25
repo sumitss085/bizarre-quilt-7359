@@ -1,14 +1,10 @@
-#navbar{
-    background-color: white !important;
-}
-
-/* Content box1 start */
+ 
 
 
 
 
 
-#centrebox{
+.centrebox{
     width: 35%;
     height: auto;
     margin: auto;
@@ -16,7 +12,7 @@
     font-size: 32px;
     margin-top: 8%;
 }
-/* box1 end */
+ 
 .box2divs{
     width:17%;
     height: 55vh;
@@ -108,4 +104,37 @@
     box-shadow: inset 300px 0 0 0 rgb(252, 249, 249);
     cursor: pointer;
     color: #5846f6;
+  }
+
+
+
+
+  @media screen and (max-width: 1200px) {
+    .centrebox,.box2divs, .box2img,.box2img + img,.box2divs a,.box2divs a:hover,#part9, #part9-heading,
+    #part9-cont,
+    #part9-button,  #part9-heading,  #part9-cont , #part9-btn, #part9-btn:hover{
+      width: 45%;
+      height: auto;
+    }
+   
+  }
+  
+  @media screen and (max-width: 900px) {
+    .centrebox,.box2divs, .box2img,.box2img + img,.box2divs a,.box2divs a:hover,#part9, #part9-heading,
+    #part9-cont,
+    #part9-button,  #part9-heading,  #part9-cont , #part9-btn, #part9-btn:hover {
+      width: 60%;
+      height: auto;
+    }
+
+    
+  }
+  @media screen and (max-width: 600px) {
+    .centrebox,.box2divs, .box2img,.box2img + img,.box2divs a,.box2divs a:hover,#part9, #part9-heading,
+    #part9-cont,
+    #part9-button,  #part9-heading,  #part9-cont , #part9-btn, #part9-btn:hover {
+      width: 90%;
+      height: auto;
+    }
+  
   }
