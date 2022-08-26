@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins",sans-serif;
+}
+
+.hidden-xs{
+    background-image: url("https://storage.googleapis.com/lumen5-site-images/website-assets/login-bg3.png");
+    margin-left:0;
+    background-size: cover;
+}
+#leftdiv {
+    margin-left: 15%;
+    color: white;
+}
+
+
+.logo a img{
+    width: 120px;
+    height: 80px;
+}
+
+.info h1{
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: 10%;
+    margin-right: 50px;
+}
+
+h1{
+    margin: 0 0 30px 0;
+    line-height: 1.2;
+}
+
+h2{
+    margin: 0 0 20px 0;
+}
+
+.info h2{
+    margin: 0 0 20px 0;
+    margin-top: 10%;
+    font-size: 3vh;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+
+.logo-container{
+    margin-top: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 15.6px;
+}
+
+.logo-container div {
+    width: 25%;
+    margin-right: 32px;
+}
+
+.logo-container div img{
+    width: 100%;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.col-sm-8{
+    margin-left: 3%;
+    margin-top: -2.1%;
+}
+
+.col-sm-8 .logo{
+    width: 161px;
+    margin-top: 3rem;
+    height: 75px;
+}
+
+.col-sm-8 .logo a img{
+    width: 100% !important;
+    height: 45px;
+}
+
+.login-form h2{
+    width: 500px;
+    font-size: 37px;
+    font-weight: 700;
+    margin-left: 1%;
+}
+
+#form-start {
+    margin-top: 5%;
+}
+
+label{
+    font-size:16px;
+    margin-top: 10px;
+}
+
+#email, #password, #name{
+    margin-left: 1%;
+    border:none;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+#email:focus , #password:focus , #name:focus{
+    outline: 0;
+    border-color: transparent;  
+    box-shadow: 0 1px 0 #5846f6;
+}
+
+#forgot{
+    margin-top: -20px;
+    margin-left: 37%;
+    color: rgb(143, 140, 140);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#messagemain{
+    margin-bottom: 20px;
+    color: red;
+}
+
+#submit1 {
+    width: 510px;
+    margin-left:10px;
+    margin-bottom: 20px;
+    border-radius: 50rem;
+    background-color: #5846F6;
+    border-color: #5846F6;
+}
+
+hr{
+    color: rgb(143, 140, 140);
+    width: 520px;
+}
+
+#message{
+    margin-top: 40px;
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+
+
+#message a{
+    font-weight: 500;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    list-style: none;
+}
+
+ul li::before{
+    content: "\2022";
+    color: #5846f6;
+    font-weight: bold;
+    width: 10em;
+    height: 10em;
+}
+
+#incorrect::before{
+    content: "\2022";
+    color: white;
+    font-weight: bold;
+}
+
+#incorrect{
+    color: red;
+}
+
+.col-4 i {
+    cursor: pointer;
+    color: rgb(168, 168, 168);
+}
+
+ul li{
+    font-size:13px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .logo-container{
+        justify-content: center;
+    }
+    .logo-container div{
+        width: 128px;
+    }
+    .logo-container div img{
+        height:70px;
+    }
+}
+
+@media  (max-width: 768px){
+    .hidden-xs{
+        display: none;
+    }
+
+    #email, #password, #name{
+        width: 80% !important;
+    }
+
+    #submit1, #submit{
+        width: 310px;
+    }
+
+    #togglePassword{
+        margin-left: 50px;
+    }
+
+    .login-form h2{
+        width: 300px;
+        font-size: 30px;
+    }
+
+    hr{
+        color: rgb(143, 140, 140);
+        width: 320px;
+    }
+
+    #message{
+        margin-top:20px;
+        margin-left: 15px;
+        font-size: 13px;
+    }
+
+    ul{
+        grid-template-columns: repeat(1, 250px);
+    }
+
+}
+
+@media (max-width: 956px){
+    .info h1{
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 956px){
+    .logo img{
+        margin-bottom: 30px;
+    }
+    
+} 
+
+@media (min-width: 768px){
+    .col-sm-4{
+        width: 33.33333333%;
+    }
+    .col-sm-8 {
+        width: 66.66666667%;
+        margin-left: 40%;
+        margin-top: -77%;
+
+    }
+    .col-sm-8 .logo a img{
+        display: none !important;
+    }
+
+   
+}
+
+
+@media (min-width: 1200px) {
+    .col-sm-8{
+        margin-top: -55%;
+    }
+}
