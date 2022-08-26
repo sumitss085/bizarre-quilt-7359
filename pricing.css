@@ -30,7 +30,8 @@ border-radius: 100px;
     /* align-items: center; */
     margin:auto;
    
-}.under_main{
+}
+.under_main{
     width: 25%;
 }
 .under_main>div:nth-child(1){
@@ -159,3 +160,113 @@ margin: 10px;
     margin: auto;
     gap: 30px;
 }
+
+
+/* @media screen and (max-width: 1200px) {
+    .centrebox,.box2divs, .box2img,.box2img + img,.box2divs a,.box2divs a:hover,#part9, #part9-heading,
+    #part9-cont,
+    #part9-button,  #part9-heading,  #part9-cont , #part9-btn, #part9-btn:hover{
+      width: 45%;
+      height: auto;
+    }
+   
+  } */
+  
+  @media screen and (max-width: 900px) {
+    #maintofan{
+        display: grid ;
+        /* flex-direction: column; */
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        width: 100%; 
+        /* text-align: start;  */
+        justify-content: center;
+         /* align-items: center; */
+        margin:15%;
+       
+    }
+    .under_main>div:nth-child(1){
+        border: 5PX solid rgb(32, 32, 161);
+    height:65% ;
+    width: 150%;
+    padding: 9px;
+    border-radius: 9px;
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    /* grid-template-columns: repeat(1,1fr); */
+    }
+    #for_img_any{
+        /* width: 90%; */
+        margin: auto;
+        padding: 50px;
+        margin-top: 65px;
+        display: grid;
+        background-color: rgb(245, 243, 239);
+    
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+  }
+  @media screen and (max-width: 600px) {
+    #maintofan{
+        display: flex ;
+        flex-direction: column;
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+        /* width: 100%;  */
+        text-align: start; 
+        justify-content: center;
+         align-items: center;
+        margin:auto;
+       
+    }
+    .under_main>div:nth-child(1){
+        border: 5PX solid rgb(32, 32, 161);
+    height:65% ;
+    padding: 9px;
+    border-radius: 9px;
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: repeat(1,1fr); */
+    }
+    #for_img_any{
+        /* width: 90%; */
+        margin: auto;
+        padding: 50px;
+        margin-top: 65px;
+        display: grid;
+        background-color: rgb(245, 243, 239);
+    
+        grid-template-columns: repeat(1,1fr);
+    }
+  #choose_plan>div:nth-child(2){
+display: flex;
+justify-content: center;
+align-items: center;
+width: 50%;
+margin: auto;
+padding-left: 350px;
+border-bottom: 4px solid rgb(108, 91, 91);
+}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
