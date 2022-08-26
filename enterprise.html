@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./enterprise.css">
-    <script src="https://kit.fontawesome.com/ae4ba06d23.js" crossorigin="anonymous"></script>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/58473adaa6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -98,22 +98,26 @@
         </div>
         <div id="viedo_container">
             <div>
-                <video width="520" height="300" controls>
-                    <source src="https://storage.googleapis.com/lumen5-site-images/siemens_prev.mp4" type="video/mp4">
+                <i class="fa-solid fa-play fa-3x" id="playIcon"></i>
+                <video class="vid" muted loop>
+                    <source src="https://storage.googleapis.com/lumen5-site-images/siemens_prev.mp4"  type="video/mp4">
                 </video>
             </div>
             <div>
-                <video width="520" height="300" controls>
+                <i class="fa-solid fa-play fa-3x" id="playIcon"></i>
+                <video class="vid" muted loop>
                     <source src="https://storage.googleapis.com/lumen5-site-images/salesforce_prev.mp4" type="video/mp4">
                 </video>
             </div>   
             <div>
-                <video width="520" height="300" controls>
+                <i class="fa-solid fa-play fa-3x" id="playIcon"></i>
+                <video class="vid" muted loop>
                     <source src="https://storage.googleapis.com/lumen5-site-images/viasat_prev.mp4" type="video/mp4">
                 </video>
             </div>
             <div>
-                <video width="520" height="300" controls>
+                <i class="fa-solid fa-play fa-3x" id="playIcon"></i>
+                <video class="vid" muted loop>
                     <source src="https://storage.googleapis.com/lumen5-site-images/storaenso_prev.mp4" type="video/mp4">
                 </video>
             </div>
@@ -123,6 +127,7 @@
     <section id="content_div_sec">
         <div id="content_div">
             <div>
+                
                 <h3>Scale your content and <br> break that bottleneck</h3>
                  <p>Content creation bottlenecks swell up when a marketing team relies too much on a small group of specialized pros to produce a large volume of video content. Instead, put the freedom of video creation directly into the hands of all your teams while ensuring brand control and watch your content library multiply.</p>   
             </div>
@@ -147,6 +152,7 @@
                 <img src="./img/enterprise-scale.png" alt="">
             </div>
             <div>
+                
                 <h2>Produce videos at scale and in‑house. Seriously easy.</h2>
                 <p>Lumen5 is an unbelievably easy to use video creator built specifically for users without experience in video editing. The workflow is as simple as creating a PowerPoint presentation, and the output can be indistinguishable from professional agency-produced videos.</p> <br><br>
                 <p>You can create professional video from any text-based content and cut video creation time to an average of six minutes in Lumen5.</p><br><br>
@@ -167,6 +173,47 @@
             </div>
         </div>
     </section>
+
+    <section id="enterprise-scale">
+        <div>
+            <img src="./img/enterprise-support.png" alt="" srcset="">
+        </div>
+        <div>
+            <h1>Priority support, customer <br> success, and continuous <br> training.</h1>
+            <p>Our strategic Customer Success team has worked with hundreds of brands on implementation and adoption. We have a strong track record of helping users across all departments of all enterprises become video creation experts. Paired with our easy-peasy UI and AI, your team will be pumping out expert eye catching videos in days.</p><br>
+            <p>Onboarding is just the beginning. We'll team up with you throughout our partnership to offer video analysis, creative direction, and industry best practices to help you continuously push the boundaries of producing more effective video content that actually generates results and drives growth. We got you.</p><br>
+        </div>
+    </section>
+
+    <section id="people_call_sec">
+        <div id="people_call">
+            <div>
+                <h4>Siemens</h4>
+                <p>“One of the goals of the company is to help our customers in their digital transformation, Lumen5 helps us in getting more digital in our communications—that’s part of the digital transformation.”</p>
+                <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/guenter-siemens.jpeg" alt="">
+                <span>Guenter Gaugler</span><br>
+                <h6>Head of Content <br>
+                    Production</h6>
+            </div>
+            <div>
+                <h4>Mitsubishi</h4>
+                <p>“Thanks to Lumen5, we have been able to cut down on time and costs for video making. We don’t have to go through a third party which speeds everything up and makes our work a lot easier.”</p>
+                <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/adrian-mitsubishi.jpg" alt="">
+                <span>Adrian Ngo</span>
+                <h6>Global Advertising <br>
+                    and Sponsorships</h6>
+            </div>
+            <div>
+                <h4>Cisco</h4>
+                <p>“At Cisco we try to share lots of multimedia content and new types of content like memes, graphics and videos. And the videos by far give us the most engagement, thanks to Lumen5.”</p>
+                <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/eric-cisco.jpeg" alt="">
+                <span>Eric Chu</span>
+                <h6>Social and Digital 
+                    Content Manager</h6>
+            </div>
+        </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
+<script src="./enterprise.js"></script>
