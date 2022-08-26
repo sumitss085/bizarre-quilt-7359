@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>multivedio</title>
+    <link rel="stylesheet" href="multivedio.css">
+   
+</head>
+<body>
+    <div id="brand">
+        <div>
+            <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/image-customize.png" alt="">
+        </div>
+        
+        <div id="info">
+    
+            <div>
+                <i class='fas fa-palette' style='font-size:36px'></i>
+                <h2>Making it easy to stay on brand</h2>
+                <p>It has never been easier to stay on brand. With Lumen5 templates, you can customize each video with your unique logo, watermark, fonts, colors, and more.</p>
+            </div>
+            <div>
+                <p>“Whenever I got in touch with Lumen5 I felt like my suggestions mattered and I was being listened to. It’s like I’m co-creating in a tiny way. It’s a great feeling.”</p>
+               
+            </div>
+            <div id="person">
+                <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/image-promod-s.jpg" alt="">
+                <div>
+                    <p><b>Promod Sharma</b> <br>, Actuary & Insurance Consultant</p>
+                    
+                    <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-taxevity-color.png" alt="">
+                </div>
+               
+            </div>
+          
+        </div>
+    </div>
+    <div id="multi">
+        <h2>Explore videos made with Lumen5</h2>
+        <div>
+            <button id="active">Content Markrting</button>
+            <button>Communication</button>
+            <button>Promotional</button>
+            <button>People and Culture</button>
+            <button>Localization</button>
+        </div>
+        <div id="multi_vedio">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+   <div id="slider">
+        <h2>Customer success stories</h2>
+        <p>Discover how leading brands are getting results with Lumen5.</p>
+        <div id="window">
+            <img id="img" src="https://storage.googleapis.com/lumen5-site-images/carousel-mhi-bg.png" alt="">
+        </div>
+        <i id="Lbtn" onclick="slideleft()" class='fas fa-angle-left' style='font-size:50px'></i>
+        <i id="Rbtn" onclick="slideright()"  class='fas fa-angle-right' style='font-size:50px'></i>
+        <img src="https://storage.googleapis.com/lumen5-site-images/carousel-siemens.png" alt="">
+        <img src="https://storage.googleapis.com/lumen5-site-images/carousel-dnv.png" alt="">
+        <img src="https://storage.googleapis.com/lumen5-site-images/carousel-mitsubishi.png" alt="">
+        <img src="https://storage.googleapis.com/lumen5-site-images/carousel-ncstate.png" alt="">
+        <img src="https://storage.googleapis.com/lumen5-site-images/carousel-cms.png" alt="">
+        <img src="https://storage.googleapis.com/lumen5-site-images/carousel-mondadori.png" alt="">
+        <img src="https://storage.googleapis.com/lumen5-site-images/carousel-berkshire.png" alt="">
+   </div>
+
+   <div id="bot_sec">
+        <h4>Tips and tricks for amplifying
+            your brand with video</h4>
+        <div>
+        
+            <div>
+                <img src="https://lumen5.com/learn/wp-content/uploads/2019/05/Video-Marketing-How-to-Get-Started.jpg" alt="">
+                <h3> BLOG</h3>
+                <h3>Video Marketing: How to Get Started [Step by Step]</h3>
+            </div>
+            
+            <div>
+                <img src="https://lumen5.com/learn/wp-content/uploads/2019/08/Host-an-Instagram-Takeover-in-7-Simple-Steps.jpg" alt="">
+                <h3> BLOG</h3>
+                <h3>How to Increase Your Facebook Video Views [Complete Guide]</h3>
+            </div>
+            
+            <div>
+                <img src="https://lumen5.com/learn/wp-content/uploads/2018/10/photo-1518406432532-9cbef5697723.jpeg" alt="">
+                <h3> BLOG</h3>
+                <h3>The Importance of Video in Your Content Strategy</h3>
+            </div>
+            
+        </div>
+   </div>
+
+</body>
+</html>
+ <script>
+   let image_link=[
+  " https://storage.googleapis.com/lumen5-site-images/carousel-mhi-bg.png ",
+"https://storage.googleapis.com/lumen5-site-images/carousel-ncstate-bg.png",
+"https://storage.googleapis.com/lumen5-site-images/carousel-cms-bg.png",
+ "https://storage.googleapis.com/lumen5-site-images/carousel-mondadori-bg.png",
+"https://storage.googleapis.com/lumen5-site-images/carousel-berkshire-bg.png",
+"https://storage.googleapis.com/lumen5-site-images/carousel-siemens-bg.png",
+   ] 
+
+
+let img=document.getElementById("img")
+let image=0
+   let slideleft = () => {
+    image--
+       if(image<0){
+        image=image_link.length-1
+       }
+       img.src=image_link[image]
+     console.log(image)
+
+   }
+   let slideright = () => {
+    image++
+       if(image==image_link.length){
+        image=0
+       }
+       img.src=image_link[image]
+       console.log(image)
+   }
+
+
+
+
+</script>
+
+ 
+   
+
+
