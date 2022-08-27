@@ -148,6 +148,7 @@ display: none;
     top: 50%;
     transform: translate(-50%,-50%);
     display: none;
+    border: 1px solid red;
 
 }
 .vedio_player vedio:focus{
