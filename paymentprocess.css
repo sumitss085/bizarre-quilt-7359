@@ -1,0 +1,38 @@
+/* *{
+    font-family: "Poppins",sans-serif;
+} */
+header{
+    margin-top: 10px;
+    text-align:center ;
+}
+
+img{
+    height: 50px;
+}
+
+header hr{
+  width: 100%;
+}
+
+.proccessingbox{
+    width: 34%;
+    height: 15%;
+    box-shadow: 10px 10px 8px 10px #888888;
+    margin: 8% 33%;
+}
+
+h2{
+    font-size: 35px !important;
+    font-weight: bold !important;
+}
+
+
+h2, h2+div{
+    width: 100%;
+    text-align: center;
+}
+
+h2+div{
+    margin-top: 3% !important;
+    font-size: 15px !important;
+}
