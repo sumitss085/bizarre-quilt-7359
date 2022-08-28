@@ -1,0 +1,168 @@
+*{
+    font-family: "Poppins",sans-serif;
+}
+
+.left-div{
+    width: 50%;
+}
+
+.left-div img{
+    width: 150px;
+    height: 40px;
+    margin-left: 18%;
+    margin-top: 50px;
+}
+
+.right-div{
+    width: 50%;
+    margin-top: 50px;
+}
+.div-m{
+    height: 70px;
+}
+
+.div-m h3{
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+
+.imgpayment{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.imgpayment img {
+    height: 20px;
+}
+
+.carddetails {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+.detailsbox{
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.detailsbox input[type=text]{
+    width: 50%;
+    height: 25px;
+    position: relative;
+    height: 44px;
+    padding: 8px 12px;
+    color: rgba(26,26,26,.9);
+    font-size: 16px;
+    line-height: 1.5;
+    border: 0;
+    box-shadow: 0 0 0 1px #e0e0e0,0 2px 4px 0 rgba(0,0,0,.07),0 1px 1.5px 0 rgba(0,0,0,.05);
+    transition: box-shadow .08s ease-in,color .08s ease-in,filter 50000s;
+    background: #fff;
+    appearance: none;
+}
+
+.detailsbox input[type=tel] , .detailsbox input[type=password]{
+    width: 22%;
+    margin-top: 3px !important;
+    height: 25px;
+    position: relative;
+    height: 44px;
+    padding: 8px 12px;
+    color: rgba(26,26,26,.9);
+    font-size: 16px;
+    line-height: 1.5;
+    border: 0;
+    box-shadow: 0 0 0 1px #e0e0e0,0 2px 4px 0 rgba(0,0,0,.07),0 1px 1.5px 0 rgba(0,0,0,.05);
+    transition: box-shadow .08s ease-in,color .08s ease-in,filter 50000s;
+    background: #fff;
+    appearance: none;
+}
+
+#subscribe{
+    position: relative;
+    overflow: hidden;
+    height: 44px;
+    width: 50%;
+    margin-left: 10px;
+    margin-top: 12px;
+    padding: 0;
+    color: #fff;
+    box-shadow: inset 0 0 0 1px rgba(50,50,93,.1),0 2px 5px 0 rgba(50,50,93,.1),0 1px 1px 0 rgba(0,0,0,.07);
+    border: 0;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all .2s ease,box-shadow .08s ease-in;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.text-blw-btn {
+    width: 50%;
+    margin-left: 10px;
+    color: rgba(26,26,26,.6);
+    font-size:13px;
+    text-align: center;
+    margin-top:5px;
+}
+
+#light-text{
+    color: rgba(26,26,26,.6);
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 20%;
+    margin-top: 15px;
+}
+
+#price-text{
+    font-size: 28px;
+    margin-left: 20%;
+    font-weight: 600;
+}
+
+label{
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.carddetails input {
+    margin-left: 20px;
+    width: 50px;
+    height: 20px;
+}
+
+.detailsbox input[type=text]:focus{
+    outline: none !important;
+border-color: #719ECE;
+box-shadow: 0 0 10px #719ECE;
+}
+
+
+@media (max-width:960px) {
+    .d-flex{
+        flex-direction: column;
+    }
+
+    .left-div{
+        width: 100%;
+    }
+
+    .left-div img{
+        margin-left: 20px;
+    }
+
+    #light-text, #price-text{
+        margin-left: 35px;
+    }
+
+    .right-div{
+        width: 100%;
+        margin-left: 20px;
+    }
+}
