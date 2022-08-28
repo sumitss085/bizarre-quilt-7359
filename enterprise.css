@@ -9,7 +9,7 @@ nav{
   
     width: 100%;
     height: 100px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* background-color: rgb(208, 111, 111); */
     display: flex;
     align-items: center;
@@ -245,11 +245,7 @@ video{
     /* background-color: gray; */
     color: gainsboro;
 }
-.vid:hover .playIcon{
-    /* display: none; */
-    /* color: white; */
-    /* background-color: aliceblue; */
-}
+
 #viedo_container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -284,7 +280,7 @@ video{
     margin: auto;
     column-gap: 100px;
     row-gap: 25px;
-    padding-top: 70px;
+    /* padding-top: 70px; */
     color: white;
 }
 #content_div h3{
@@ -370,8 +366,178 @@ video{
     position: relative;
     top: -15px;
 }
+/* More video */
+#moreVideo{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 85%;
+    margin: auto;
+    column-gap: 25px;
+}
+#moreVideo button{
+  border-radius: 25px;
+  width: 180px;
+  padding: 9px 0px;
+}
+#moreVideo_section h1{
+    text-align: center;
+    padding-bottom: 25px;
+}
+#moreVideo_section {
+    padding-top: 50px;
+}
+#content_marketing{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 85%;
+    column-gap: 45px;
+    margin: auto;
+}
+.slider{
+    width: 70%;
+    margin: auto;
+}
+.slider img{
+    width: 100%;
+    max-height: 350px;
+}
+#case_section h1{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+#blog_section h1{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 15px;
+}
+#blog_section p{
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 25px;
+}
+.blogDiv{
+    width: 85%;
+    margin: auto;
+}
+#request_div{
+    width: 80%;
+    margin: auto;
+    background-color: #5846f6;
+    text-align: center;
+    padding: 55px 35px;
+    border-radius: 15px;
+    margin-top: 100px;
+    color: white;
+}
+#request_div h3{
+    padding: 35px 55px; 
+}
+#request_div button{
+    padding: 15px 25px; 
+    outline: 0px;
+    border: none;
+    border-radius: 25px;
+}
+.icon:hover .icons{
+    display: none !important;
+} 
+
+.footer {
+    background-color: #24282F;
+    display:flex;
+    flex-direction: row;
+}
+
+.logo-box{
+    width: 30%;
+    margin-left: 8%;
+    margin-top: 50px;
+    margin-right: 10%;
+}
+
+.logo-box img {
+    max-width: 120px;
+    padding-bottom: 0.5rem !important;
+    padding-top: 0.5rem !important;
+    margin-bottom: 1rem !important;
+}
+
+.logo-box  p{
+    color: #F0F0F4 !important;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: .02em;
+    width: 50%;
+    align-items: center;
+}
+
+.footer-links{
+    margin-top:50px;
+    width: 13%;
+    margin-right: 2%;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.top-upper{
+    color: #F0F0F4 !important;
+    margin-bottom: 30px;
+    margin-top: -1px !important;
+}
+
+.footer-links ul{
+    width: 100%;
+    color: #F0F0F4;
+}
+
+.footer-links ul{
+    display: flex;
+    flex-direction: column;
+}
 
 
+ul li{
+    margin-top: 18px;
+    color: #C8CbD9;
+    align-items: left;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width:768px) {
+    .footer{
+        background-color: #24282F;
+        display:flex;
+        flex-direction: column !important;
+    }
+
+    .footer-links{
+        margin-top:50px;
+        width: 100%;
+    }
+    .deactive{
+        display: none;
+    }
+    .footer-links ul{
+        width: 100%;
+        color: #F0F0F4;
+        margin-left: 6%;
+    }
+    .logo-box  p{
+        color: #F0F0F4 !important;
+        font-size: .875rem;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: .02em;
+        width: 100%;
+        align-items: center;
+    }
+}
+#footer_section{
+    padding-top: 150px;
+}
 /* ----------------------Media Query---------------------- */
 @media all and (min-width:700px)and (max-width: 1200px){
     #banner{
@@ -396,6 +562,39 @@ video{
     #enterprise-scale{
         grid-template-columns: repeat(1,1fr);
     }
+    #people_call{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        text-align:left;
+    }
+    #people_call img{
+        border-radius: 50%;
+        width: 50px;
+        display: inline-block;
+       }
+       #people_call span{
+           font-size: 18px;
+           font-weight: 700;
+       }
+       #people_call p{
+           font-size: 18px;
+       }
+       #people_call h6{
+           padding-left: px;
+           font-weight: 500;
+           display: inline-block;
+           position: relative;
+           top: -15px;
+       }
+       #moreVideo{
+        grid-template-columns: repeat(3,1fr);
+        row-gap: 25px;
+        }
+        .slider img{
+            width: 100%;
+            min-height: 350px;
+        }
+
 
 } 
 @media all and (min-width:390px)and (max-width: 700px){
@@ -421,5 +620,18 @@ video{
     }
     #enterprise-scale{
         grid-template-columns: repeat(1,1fr);
+    }
+    #moreVideo{
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 25px;
+    }
+    #content_marketing{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+    }
+    .slider img{
+        width: 100%;
+        min-height: 250px;
     }
 }
